@@ -1,7 +1,8 @@
 class TicTacToe {
     constructor() {
         this.playerTurn = 'X';
-        this.turnDisplayElement = document.getElementsByClassName('turn')[0];
+        this.turnDisplayElement = document.getElementsByClassName("turn")[0];
+        //console.log(document.getElementsByClassName('turn')[0]);
         this.boardState = [
             ['', '', ''],
             ['', '', ''],
@@ -17,6 +18,7 @@ class TicTacToe {
 
     showPlayerTurn() {
         if(this.playerTurn === 'X') {
+            //console.log(this.turnDisplayElement);
             this.turnDisplayElement.innerText = "Player 1's Turn";
         }
         if(this.playerTurn === 'O') {
